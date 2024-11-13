@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  test:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+      - AWS_DEFAULT_REGION=us-east-1
+    command: pytest -v --cov=src --cov-report=term-missing
+
+  dev:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+      - AWS_DEFAULT_REGION=us-east-1
+    command: /bin/bash
+
+  format:
+    build: .
+    volumes:
+      - .:/app
+    command: sh -c "black . && isort . && flake8 ."
