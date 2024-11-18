@@ -31,6 +31,9 @@
 ---
 
 ## Description
+
+> **Note**: At the request of my organization, all code and services have been obfuscated.
+
 This repository contains code for automations between FirstService and SecondService. FirstService is an AI-based time-tracking system designed to help make time-tracking easier for employees. SecondService is a time-tracking reporting and analytics system used to track retainers and generate quotes based on collected data. 
 
 SecondService is the platform used by the admin team, while the rest of the team uses FirstService to track their time. Therefore, project and client data must be relayed from SecondService to FirstService to ensure proper client and project setup. While timesheet data needs to be relayed from FirstService to SecondService for accurate reporting and quoting.
