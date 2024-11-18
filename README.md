@@ -13,6 +13,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Codebase Structure](#codebase-structure)
 - [Prerequisites](#prerequisites)
 - [Architecture](#architecture)
 - [Components](#components)
